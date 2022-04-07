@@ -9,31 +9,47 @@ class HomePage extends StatelessWidget {
         title: Text('Belajar Routing'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: [
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/about');
-              },
-              child: Text('About'),
-            ),
-            const SizedBox(height: 10.0),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/portofolio');
-              },
-              child: Text('Portofolio'),
-            ),
-            const SizedBox(height: 10.0),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/contact');
-              },
-              child: Text('Contact'),
+            ListTile(
+              title: Row(children: [
+                Icon(Icons.info_outline_rounded),
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0),
+                  child: Text(
+                    'About',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ]),
             ),
           ],
         ),
+        // Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     RaisedButton(
+        //       onPressed: () {
+        //         Navigator.pushNamed(context, '/about');
+        //       },
+        //       child: Text('About'),
+        //     ),
+        //     const SizedBox(height: 10.0),
+        //     RaisedButton(
+        //       onPressed: () {
+        //         Navigator.pushNamed(context, '/portofolio');
+        //       },
+        //       child: Text('Portofolio'),
+        //     ),
+        //     const SizedBox(height: 10.0),
+        //     RaisedButton(
+        //       onPressed: () {
+        //         Navigator.pushNamed(context, '/contact');
+        //       },
+        //       child: Text('Contact'),
+        //     ),
+        //   ],
+        // ),
       ),
     );
   }
