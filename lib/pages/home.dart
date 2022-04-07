@@ -76,31 +76,6 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        // Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: [
-        //     RaisedButton(
-        //       onPressed: () {
-        //         Navigator.pushNamed(context, '/about');
-        //       },
-        //       child: Text('About'),
-        //     ),
-        //     const SizedBox(height: 10.0),
-        //     RaisedButton(
-        //       onPressed: () {
-        //         Navigator.pushNamed(context, '/portofolio');
-        //       },
-        //       child: Text('Portofolio'),
-        //     ),
-        //     const SizedBox(height: 10.0),
-        //     RaisedButton(
-        //       onPressed: () {
-        //         Navigator.pushNamed(context, '/contact');
-        //       },
-        //       child: Text('Contact'),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }
