@@ -32,6 +32,7 @@ class HomePage extends StatelessWidget {
                     Navigator.pushNamed(context, '/about');
                   }),
             ),
+            const SizedBox(height: 8.0),
             Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey, width: 1.0),
@@ -52,6 +53,7 @@ class HomePage extends StatelessWidget {
                     Navigator.pushNamed(context, '/portofolio');
                   }),
             ),
+            const SizedBox(height: 8.0),
             Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey, width: 1.0),
